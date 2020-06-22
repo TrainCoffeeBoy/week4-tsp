@@ -7,12 +7,15 @@ from common import format_solution, read_input
 
 import solver_greedy
 import solver_random
+import greedy_opt2
 
 CHALLENGES = 7
 
 def generate_sample_solutions():
     solvers = ((solver_random, 'random'),
-               (solver_greedy, 'greedy'))
+               (solver_greedy, 'greedy'),
+               (greedy_opt2, 'yours'))
+
     for challenge_number in range(CHALLENGES):
         cities = read_input('input_{}.csv'.format(challenge_number))
         for solver, solver_name in solvers:
