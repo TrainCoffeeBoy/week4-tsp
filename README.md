@@ -1,3 +1,11 @@
+# (greedy + two-opt) + random -> genetic algorithm
+solver-greedyをtwo-optを使って改善したルートものを20%、randomに作成したルートを80%用意し、
+それをgenetic algorithmで最適化しました。
+greedy + two-optがそこそこいい形になったので、それに全くのrandomを交配させていくと、
+上手くいくのでは（Final Fantasy 7　でチョコボの交配をする時、AランクとCランクを混ぜるといい！というのが記憶に残っていて）と考えました。
+ただ、これ以外にもいじれるパラメータは他にもあり、どんな風にいじればいいかの深堀はできていません。
+
+
 Build@Mercari 2020 Week4 - Travelling Salesman PRoblem Challenges.
 
 This is forked from [https://github.com/hayatoito/google-step-tsp-2016](https://github.com/hayatoito/google-step-tsp-2016).
